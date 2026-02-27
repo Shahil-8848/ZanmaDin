@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MessageCircle, ShoppingBag } from "lucide-react";
+import Image from "next/image";
+import logo from "@/assets/photos/janmadinlogo.png";
 
 export default function Navbar() {
     const navRef = useRef<HTMLElement>(null);
@@ -18,10 +20,20 @@ export default function Navbar() {
     return (
         <nav
             ref={navRef}
+
             className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 mx-4 mt-6 rounded-full glass transition-brand"
         >
-            <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold tracking-tighter font-reggae text-gold">ZANMADIN</span>
+            <div className="flex items-center gap-3">
+                <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full">
+                    <Image
+                        src={logo}
+                        alt="Zanmadin Logo"
+                        fill
+                        className="object-contain"
+                        priority
+                    />
+                </div>
+                <span className="text-2xl md:text-3xl font-bold tracking-tighter font-reggae text-gold">ZANMADIN</span>
             </div>
 
             <div className="hidden md:flex items-center gap-8 font-medium">
