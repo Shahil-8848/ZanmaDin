@@ -33,7 +33,11 @@ export default function Navbar() {
                         priority
                     />
                 </div>
-                <span className="text-2xl md:text-3xl font-bold tracking-tighter font-reggae text-gold">ZANMADIN</span>
+                <span
+                    className="text-2xl md:text-5xl font-black tracking-[-0.05em] font-playfair text-[#FDE68A] uppercase drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]"
+                >
+                    Zanmadin
+                </span>
             </div>
 
             <div className="hidden md:flex items-center gap-8 font-medium">

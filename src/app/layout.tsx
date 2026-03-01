@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Tenor_Sans, Reggae_One } from "next/font/google";
+import { Tenor_Sans, Reggae_One, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const tenorSans = Tenor_Sans({
@@ -11,6 +11,12 @@ const tenorSans = Tenor_Sans({
 const reggaeOne = Reggae_One({
   weight: "400",
   variable: "--font-reggae",
+  subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  weight: ["400", "700", "900"],
+  variable: "--font-playfair",
   subsets: ["latin"],
 });
 
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${tenorSans.variable} ${reggaeOne.variable} antialiased bg-[#074423] text-white`}
+        className={`${tenorSans.variable} ${reggaeOne.variable} ${playfair.variable} antialiased bg-[#074423] text-white`}
       >
         {children}
       </body>
