@@ -51,7 +51,7 @@ export default function Hero() {
 
                 <p ref={textRef} className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 font-tenor">
                     Make your loved ones feel special with premium birthday and surprise packages.
-                    Whether you are in Nepal or anywhere in the world, you are just one message away from sending love.
+
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-6 pt-4">

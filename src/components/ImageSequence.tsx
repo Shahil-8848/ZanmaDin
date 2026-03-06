@@ -124,15 +124,15 @@ export default function ImageSequence({ frameCount, directory }: ImageSequencePr
             {/* The white background overlay that appears at the end */}
             <div className="absolute inset-0 bg-white opacity-0 z-0" id="ending-bg" />
 
-            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full object-cover opacity-60 z-1" />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/40 pointer-events-none z-1" />
+            <canvas ref={canvasRef} className="absolute inset-0 w-full h-full object-cover opacity-100 z-1" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/20 pointer-events-none z-1" />
 
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6">
                 <div ref={text1Ref} className="max-w-4xl opacity-0 transform">
                     <h2 className="text-6xl md:text-9xl font-reggae text-white leading-tight">
                         Precious <span className="text-gold">Moments</span>
                     </h2>
-                    <p className="text-2xl md:text-4xl font-tenor text-white/90 mt-8">
+                    <p className="text-2xl md:text-4xl font-tenor text-white mt-8">
                         Handled with care, delivered with love.
                     </p>
                 </div>
@@ -141,7 +141,7 @@ export default function ImageSequence({ frameCount, directory }: ImageSequencePr
                     <h2 className="text-5xl md:text-8xl font-reggae text-primary leading-tight">
                         Celebrate <br /> <span className="text-gold">Beautifully</span>
                     </h2>
-                    <p className="text-xl md:text-2xl font-tenor text-primary/80 mt-6 max-w-xl mx-auto">
+                    <p className="text-xl md:text-2xl font-tenor text-primary mt-6 max-w-xl mx-auto">
                         Zanmadin creates emotional memories that last a lifetime.
                     </p>
                 </div>
