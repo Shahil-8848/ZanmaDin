@@ -5,7 +5,7 @@ import { Bell, Calendar, User, Phone } from "lucide-react";
 
 export default function ReminderForm() {
     return (
-        <section className="py-24 px-6 bg-gold/10">
+        <section id="ReminderForm" className="py-24 px-6 bg-gold/10">
             <div className="max-w-4xl mx-auto glass rounded-3xl p-8 md:p-12 space-y-12">
                 <div className="text-center space-y-4">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 text-gold border border-gold/30">

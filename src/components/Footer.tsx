@@ -37,7 +37,7 @@ export default function Footer() {
                     <h3 className="text-xl font-bold font-reggae text-white">Contact Info</h3>
                     <ul className="space-y-4 text-white/50 font-tenor">
                         <li className="flex items-center gap-2"><MapPin size={18} className="text-gold" /> Birtamode, Jhapa, Nepal</li>
-                        <li className="flex items-center gap-2"><Phone size={18} className="text-gold" /> +977 98XXXXXXX</li>
+                        <li className="flex items-center gap-2"><Phone size={18} className="text-gold" /> +977 9810123220</li>
                         <li className="flex items-center gap-2"><Mail size={18} className="text-gold" /> contact@zanmadin.com</li>
                     </ul>
                 </div>

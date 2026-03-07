@@ -120,16 +120,16 @@ export default function ImageSequence({ frameCount, directory }: ImageSequencePr
     }, [images, frameCount]);
 
     return (
-        <div ref={containerRef} className="relative w-full h-screen overflow-hidden bg-primary">
+        <div id="image-sequence" ref={containerRef} className="relative w-full h-screen overflow-hidden bg-primary">
             {/* The white background overlay that appears at the end */}
             <div className="absolute inset-0 bg-white opacity-0 z-0" id="ending-bg" />
 
             <canvas ref={canvasRef} className="absolute inset-0 w-full h-full object-cover opacity-100 z-1" />
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/20 pointer-events-none z-1" />
+            <div className="absolute inset-0  pointer-events-none z-1" />
 
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20 px-6">
-                <div ref={text1Ref} className="max-w-4xl opacity-0 transform">
-                    <h2 className="text-6xl md:text-9xl font-reggae text-white leading-tight">
+                <div ref={text1Ref} className="max-w-4xl  transform">
+                    <h2 className="text-6xl md:text-9xl font-reggae text-white leading-tight drop-shadow-[0_2px_20px_rgba(0,0,0,0.8)]">
                         Precious <span className="text-gold">Moments</span>
                     </h2>
                     <p className="text-2xl md:text-4xl font-tenor text-white mt-8">
@@ -137,7 +137,7 @@ export default function ImageSequence({ frameCount, directory }: ImageSequencePr
                     </p>
                 </div>
 
-                <div ref={text2Ref} className="max-w-4xl opacity-0 absolute transform">
+                <div ref={text2Ref} className="max-w-4xl absolute transform">
                     <h2 className="text-5xl md:text-8xl font-reggae text-primary leading-tight">
                         Celebrate <br /> <span className="text-gold">Beautifully</span>
                     </h2>

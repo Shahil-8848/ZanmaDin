@@ -21,13 +21,17 @@ const faqs = [
         question: "Do you offer personalized notes?",
         answer: "Absolutely! Every package comes with a beautifully handwritten or printed note of your choice to add that personal touch.",
     },
+    {
+        question: "Delivery Area for the packages?",
+        answer: "Currently, we deliver packages to all parts of Jhapa, Nepal.",
+    },
 ];
 
 export default function Faq() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-24 px-6 bg-white/5">
+        <section id="faq" className="py-24 px-6 bg-white/5">
             <div className="max-w-4xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
                     <h2 className="text-4xl md:text-6xl font-reggae">Frequently Asked Questions</h2>

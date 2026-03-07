@@ -28,7 +28,7 @@ const reasons = [
 
 export default function WhyChooseUs() {
     return (
-        <section className="py-24 px-6 bg-white/5">
+        <section id="why-choose-us" className="py-24 px-6 bg-white/5">
             <div className="max-w-6xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
                     <h2 className="text-4xl md:text-6xl font-reggae">Why Choose Zanmadin</h2>

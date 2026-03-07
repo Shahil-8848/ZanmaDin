@@ -54,15 +54,15 @@ export default function Gallery() {
                     </motion.p>
                 </div>
 
-                <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+                <div className="columns-2 lg:columns-3 gap-4 md:gap-6 space-y-4 md:space-y-6">
                     {galleryImages.map((image, idx) => (
                         <motion.div
                             key={idx}
                             initial={{ opacity: 0, scale: 0.9, y: 20 }}
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.6, delay: (idx % 3) * 0.1 }}
-                            className="relative group rounded-3xl overflow-hidden glass border border-white/10 break-inside-avoid"
+                            transition={{ duration: 0.6, delay: (idx % 2) * 0.1 }}
+                            className="relative group rounded-2xl md:rounded-3xl overflow-hidden glass border border-white/10 break-inside-avoid"
                         >
                             <div className="relative aspect-auto">
                                 <Image
@@ -71,12 +71,12 @@ export default function Gallery() {
                                     layout="responsive"
                                     width={500}
                                     height={image.size === "large" ? 700 : image.size === "medium" ? 500 : 350}
-                                    className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-110"
+                                    className="object-cover w-full h-full md:grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                    <p className="text-gold font-reggae text-lg">{image.alt}</p>
-                                    <div className="w-12 h-1 bg-gold mt-2 rounded-full" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-500">
+                                    <p className="text-gold font-reggae text-xs md:text-lg">{image.alt}</p>
+                                    <div className="w-8 md:w-12 h-0.5 md:h-1 bg-gold mt-1 md:mt-2 rounded-full" />
                                 </div>
                             </div>
                         </motion.div>

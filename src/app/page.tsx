@@ -12,6 +12,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageSequence from "@/components/ImageSequence";
 import SecondaryBackground from "@/components/SecondaryBackground";
 import Gallery from "@/components/Gallery";
+import ScrollNavigation from "@/components/ScrollNavigation";
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <ScrollNavigation />
       <WhatsAppButton />
     </div>
   );
