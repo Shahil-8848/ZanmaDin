@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ImageSequence from "@/components/ImageSequence";
 import SecondaryBackground from "@/components/SecondaryBackground";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
               <WhyChooseUs />
             </div>
           </div>
-
+          <Gallery />
           <div className="max-w-6xl mx-auto px-6 py-24">
             <div className="text-center space-y-8 glass p-12 rounded-[3rem] border-gold/30">
               <h2 className="text-5xl md:text-7xl font-reggae text-white">
@@ -48,6 +49,7 @@ export default function Home() {
 
           <ReminderForm />
           <Testimonials />
+
           <Faq />
         </div>
       </main>
