@@ -23,6 +23,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Zanmadin — Celebrate Beautifully",
   description: "Beautifully packaged celebration moments delivered with love in Nepal and beyond.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

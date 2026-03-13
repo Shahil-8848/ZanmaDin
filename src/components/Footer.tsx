@@ -42,12 +42,12 @@ export default function Footer() {
                     <ul className="space-y-4 text-white/50 font-tenor">
                         <li className="flex items-center gap-2"><MapPin size={18} className="text-gold" /> Birtamode, Jhapa, Nepal</li>
                         <li className="flex items-center gap-2">
-                            <Phone size={18} className="text-gold" /> 
+                            <Phone size={18} className="text-gold" />
                             <a href="https://wa.me/9779810123220" className="hover:text-gold transition-colors">
                                 +977 9810123220
                             </a>
                         </li>
-                        <li className="flex items-center gap-2"><Mail size={18} className="text-gold" /> contact@zanmadin.com</li>
+                        <li className="flex items-center gap-2"><Mail size={18} className="text-gold" /> zanmadin10@gmail.com</li>
                     </ul>
                 </div>
             </div>
