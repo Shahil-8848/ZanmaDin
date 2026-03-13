@@ -2,22 +2,31 @@
 
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
-
+import Image from "next/image";
+import feedback4 from "../assets/feedback/feedback4.jpeg"
+import feedback3 from "../assets/feedback/feedback3.jpeg"
+import feedback2 from "../assets/feedback/feedback2.jpeg"
+import feedback1 from "../assets/feedback/feedback1.jpeg"
 const reviews = [
     {
-        name: "Sita Sharma",
-        photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200",
-        review: "Amazing experience! The surprise package for my mom's birthday was absolutely beautiful. The premium packaging really made it feel special.",
+        name: "Reecha Ghimire",
+        photo: feedback4,
+        review: "Thankyou for your service 🙏🏻🙏🏻I am really grateful for what you did to make my mom’s birthday special🥰🥰🥰",
     },
     {
-        name: "Sameer Raut",
-        photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200",
-        review: "Ordering from abroad was so easy. Zanmadin handled everything with care. Highly recommended for anyone wanting to send love back home to Nepal.",
+        name: "Samikshya sitoula",
+        photo: feedback2,
+        review: "Thank you so much making it possible in a such a short time 💗",
     },
     {
-        name: "Preeti Thapa",
-        photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200",
-        review: "The delivery was on time and the personalized touch was exactly what I wanted. Thank you for making our anniversary extra special!",
+        name: "Aaisha",
+        photo: feedback3,
+        review: "Thank you so much sir,mam ❤️",
+    },
+    {
+        name: "Neera thakuri",
+        photo: feedback1,
+        review: "thank you so much हजुरहरूको टिमलाई जति धन्यवाद भन्दापनि कम हुने हजुरहरूको सर्भिस एकदम राम्रो छिटोभन्दा छिटो पुर्याउनुभयो र मेरो छोरीको अनुहारमा जुन खुसी देखे मैले। हजुरहरूको सबभन्दा धेरै मेहनत छ यसमा मनदेखि नै धन्यवाद। सम्पूर्ण टिमलाई 🙏🏻🙏🏻🙏🏻❤️❤️",
     },
 ];
 
@@ -43,7 +52,13 @@ export default function Testimonials() {
                             <Quote className="absolute top-6 right-8 text-gold/20 w-12 h-12" />
 
                             <div className="flex items-center gap-4">
-                                <img src={rev.photo} alt={rev.name} className="w-16 h-16 rounded-full object-cover border-2 border-gold" />
+                                <Image
+                                    src={rev.photo}
+                                    alt={rev.name}
+                                    width={64}
+                                    height={64}
+                                    className="w-16 h-16 rounded-full object-cover border-2 border-gold"
+                                />
                                 <div>
                                     <h4 className="text-xl font-bold font-reggae">{rev.name}</h4>
                                     <div className="flex text-gold">

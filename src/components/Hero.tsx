@@ -88,16 +88,11 @@ export default function Hero() {
             <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_center,transparent_0%,rgba(7,68,35,0.5)_100%)] pointer-events-none" />
 
             {/* ─── MOBILE LAYOUT (flex-col, full width) ─── */}
-            <div className="relative z-10 w-full max-w-7xl px-5 pt-16 pb-8 flex flex-col md:hidden gap-8">
+            <div className="relative z-10 w-full max-w-7xl px-5 pt-7 pb-4 flex flex-col md:hidden gap-8">
 
                 {/* Top: Text Content */}
                 <div className="flex flex-col gap-4">
-                    <div
-                        ref={badgeRef}
-                        className="inline-flex self-start px-4 py-1.5 text-[11px] font-bold tracking-[0.22em] uppercase border border-gold/40 rounded-full backdrop-blur-sm bg-white/5 text-gold"
-                    >
-                        Premium Surprises
-                    </div>
+
 
                     <h1 className="flex flex-col gap-1 overflow-hidden">
                         <span

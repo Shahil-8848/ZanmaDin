@@ -70,9 +70,12 @@ export default function Categories() {
                             <div className="p-8 space-y-2">
                                 <h3 className="text-2xl font-reggae text-gold">{cat.title}</h3>
                                 <p className="text-white/70 font-tenor leading-relaxed">{cat.description}</p>
-                                <button className="pt-4 text-sm font-bold uppercase tracking-widest text-white hover:text-gold transition-colors">
-                                    Explore Details →
-                                </button>
+                                <a 
+                                    href="https://wa.me/9779810123220" 
+                                    className="pt-4 text-sm font-bold uppercase tracking-widest text-white hover:text-gold transition-colors block"
+                                >
+                                    Order on WhatsApp →
+                                </a>
                             </div>
                         </motion.div>
                     ))}

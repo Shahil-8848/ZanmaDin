@@ -42,7 +42,7 @@ export default function Home() {
               </h2>
               <div className="flex flex-wrap items-center justify-center gap-6">
                 <button className="px-12 py-5 bg-gold text-white font-bold text-xl rounded-full hover:scale-105 transition-brand">
-                  Order Your Surprise Now
+                  Order Your Surprise Today
                 </button>
               </div>
             </div>

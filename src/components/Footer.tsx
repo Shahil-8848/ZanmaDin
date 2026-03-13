@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Twitch, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
 
 export default function Footer() {
     return (
@@ -15,11 +16,14 @@ export default function Footer() {
                         surprise packages, no matter where you are.
                     </p>
                     <div className="flex gap-4">
-                        <a href="https://instagram.com" className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-gold transition-brand">
-                            <Instagram size={20} />
+                        <a href="https://www.instagram.com/zanmadin/" className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-gold transition-brand">
+                            <SiInstagram size={20} />
                         </a>
-                        <a href="https://tiktok.com" className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-gold transition-brand">
-                            <Twitch size={20} /> {/* Using Twitch as a TikTok placeholder if TikTok icon isn't in Lucide */}
+                        <a href="https://www.tiktok.com/@zanmadin10?_r=1&_t=ZS-94bQZzCpifk" className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-gold transition-brand">
+                            <SiTiktok size={20} />
+                        </a>
+                        <a href="https://www.facebook.com/share/18T9J3rdVX/?mibextid=wwXIfr" className="w-12 h-12 rounded-full glass flex items-center justify-center hover:bg-gold transition-brand">
+                            <SiFacebook size={20} />
                         </a>
                     </div>
                 </div>
@@ -37,7 +41,12 @@ export default function Footer() {
                     <h3 className="text-xl font-bold font-reggae text-white">Contact Info</h3>
                     <ul className="space-y-4 text-white/50 font-tenor">
                         <li className="flex items-center gap-2"><MapPin size={18} className="text-gold" /> Birtamode, Jhapa, Nepal</li>
-                        <li className="flex items-center gap-2"><Phone size={18} className="text-gold" /> +977 9810123220</li>
+                        <li className="flex items-center gap-2">
+                            <Phone size={18} className="text-gold" /> 
+                            <a href="https://wa.me/9779810123220" className="hover:text-gold transition-colors">
+                                +977 9810123220
+                            </a>
+                        </li>
                         <li className="flex items-center gap-2"><Mail size={18} className="text-gold" /> contact@zanmadin.com</li>
                     </ul>
                 </div>
